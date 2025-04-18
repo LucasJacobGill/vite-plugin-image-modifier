@@ -1,8 +1,28 @@
 {
   "name": "@lucasjacobgill/vite-plugin-image-modifier",
-  "private": true,
   "version": "0.0.0",
+  "author": "lucasjacobgill",
   "type": "module",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "license": "MIT",
+  "description": "Vite plugin to modify your image assets using Sharp.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LucasJacobGill/vite-plugin-image-modifier"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasJacobGill/vite-plugin-image-modifier/issues"
+  },
+  "homepage": "https://github.com/LucasJacobGill/vite-plugin-image-modifier#readme",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "image compression",
+    "image modifier",
+    "image optimization",
+    "sharp.js"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -17,5 +37,15 @@
   },
   "dependencies": {
     "ansi-colors": "^4.1.3"
+  },
+  "peerDependencies": {
+    "vite": ">=4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@10.8.1",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
